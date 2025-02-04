@@ -7,9 +7,8 @@
 <html>
 
 <head>
-	<title>Kamron Obeng's portfolio</title>
+	<title>Kamron Obeng's Portfolio</title>
 	<link rel="shortcut icon" type="x-icon" href="images/image logo.png">
-
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -24,9 +23,8 @@
 	<div id="wrapper">
 
 		<!-- Header -->
-		<!-- Note: The "styleN" class below should match that of the banner element. -->
-		<header id="header" class="alt style2">
-			<a href="index.html" class="logo"><strong>Kamron Obengs'</strong> <span>Portfolio</span></a>
+		<header id="header" class="alt">
+			<a href="index.html" class="logo"><strong>Kamron Obeng's</strong> <span>Portfolio</span></a>
 			<nav>
 				<a href="#menu">Menu</a>
 			</nav>
@@ -46,77 +44,67 @@
 			</ul>
 		</nav>
 
-		<!-- Banner -->
-		<!-- Note: The "styleN" class below should match that of the header element. -->
-		<section id="banner" class="style2">
-			<div class="inner">
-				<span class="image">
-					<img src="images/pic07.jpg" alt="" />
-				</span>
-				<header class="major">
-					<h1>java</h1>
-				</header>
-				<div class="content">
-					<p>This page is dedicated to featuring all my Java projects, demonstrating my programming skills and
-						creativity. </p>
-				</div>
-			</div>
-		</section>
-
 		<!-- Main -->
-		<div id="main">
+		<div id="main" class="alt">
 
 			<!-- One -->
 			<section id="one">
 				<div class="inner">
 					<header class="major">
-						<h2>IntelliJ IDEA</h2>
+						<h1>To-Do List Project Overview</h1>
 					</header>
-					<p> I possess considerable proficiency in utilising JetBrains Integrated Development Environments,
-						with a particular focus on IntelliJ IDEA. This platform has served as my primary tool for the
-						development and execution of all my Java-based projects. .</p>
+
+					<h2>Project Overview</h2>
+					<p>I have created a project using Java, forms, and GUIs. My project is a to-do list designed to solve problems related to memorisation, motivation, and visualisation, among others. This product can be used by anyone at any level, including everyday individuals, students like myself, and professionals in the workplace. It supports both individual and group usage.</p>
+
+					<h2>Functional Requirements</h2>
+					<p>The first functional requirement I implemented was User Authentication and Authorization. Before accessing the to-do list, users must register with an email address and password. Another key feature is task organisation, which I addressed in two ways: by completion status and by categorising similar tasks together.</p>
+
+					<h2>Non-Functional Requirements</h2>
+					<p>The project is highly responsive with quick response times. Although I do not know the maximum number of tasks the GUI can handle, my tests showed it to be reliable, with no crashes and successful data retention.</p>
+
+					<h2>Testing/Process</h2>
+					<p>Developing this project involved numerous errors, feedback sessions, and testing phases. Initially, I created the main to-do list page, designing the GUI layout and linking buttons and text fields.</p>
+
+					<h2>Use Cases and User Stories</h2>
+					<h3>Buttons</h3>
+					<ul>
+						<li>Navigate to my to-do list and select a task.</li>
+						<li>Click the "Delete" option to remove the task.</li>
+						<li>Modify tasks using the "Delete All" button.</li>
+						<li>Click "Add Task" to update the list.</li>
+					</ul>
+
+					<h3>Registration</h3>
+					<ul>
+						<li>Create an account on the to-do list app.</li>
+						<li>Navigate to the registration page.</li>
+						<li>Enter username, choose a password, and submit.</li>
+						<li>Receive a verification email and activate the account.</li>
+					</ul>
+
+					<h3>Task Categorisation</h3>
+					<ul>
+						<li>Add a new task to the to-do list.</li>
+						<li>Categorise tasks for better organisation.</li>
+					</ul>
+
+					<h2>System Architecture</h2>
+					<p>The project consists of three main components: Login Page, Register Page, and Main Task Page.</p>
+
+					<h2>Implementation</h2>
+					<p>The project is written in Java using Swing for the GUI. Key components include:</p>
+					<ul>
+						<li><code>import javax.swing.*;</code> - GUI development</li>
+						<li><code>import java.awt.event.ActionEvent;</code> - Handles user-triggered events</li>
+						<li><code>import java.awt.event.ActionListener;</code> - Manages event interactions</li>
+					</ul>
+
+					<h2>Conclusion</h2>
+					<p>The To-Do List project successfully implements a Java Swing application that effectively manages tasks in a user-friendly manner. It features a robust login system for secure access and a seamless registration process.</p>
+					<p>Overall, the project is functional and well-executed, with room for further development.</p>
 				</div>
 			</section>
-
-			<!-- Two -->
-			<section id="two" class="spotlights">
-				<section>
-					<a href="generic java.html" class="image">
-						<img src="images/Screenshot 2025-02-03 at 23.21.46.png" alt="" data-position="center center" />
-					</a>
-					<div class="content">
-						<div class="inner">
-							<header class="major">
-								<h3>Graphical User Interface for Task Management</h3>
-							</header>
-							<p> This project utilises Java for the development of its form and graphical user interfaces
-								(GUIs). It is designed as a to-do list application aimed at addressing challenges
-								related to memorisation, motivation, visualisation, and more. This versatile product
-								caters to a wide audience, encompassing individuals of various backgrounds and
-								proficiency levels. The target demographic ranges from everyday civilians to students
-								and professionals alike. <br> <br>
-
-								The primary focus of the project was on enhancing visualisation. This was achieved
-								through the implementation of a streamlined and aesthetically pleasing GUI design,
-								complemented by judicious use of colours and imagery to enhance its presentation. The
-								interface provides users with a comprehensive view of their tasks, presented in an
-								orderly list format.
-
-								Furthermore, the project features a select number of clearly labelled buttons such as
-								"Add Task," "Edit Task," "Delete Task," and "Delete
-								All Tasks."
-							</p>
-							<ul class="actions">
-								<li><a href="generic java.html" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-
-			</section>
-
-			<!-- Three -->
-
 
 		</div>
 
