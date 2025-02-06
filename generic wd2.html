@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Kamron Obeng's portfolio</title>
+	<link rel="shortcut icon" type="x-icon" href="images/image logo.png">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header" class="alt">
+			<a href="index.html" class="logo"><strong>Kamron Obengs'</strong> <span>Portfolio</span></a>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="landing.html">Landing</a></li>
+				<li><a href="generic.html">Generic</a></li>
+				<li><a href="elements.html">Elements</a></li>
+			</ul>
+			<ul class="actions stacked">
+				<li><a href="#" class="button primary fit">Get Started</a></li>
+				<li><a href="#" class="button fit">Log In</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main" class="alt">
+
+			<!-- One -->
+			<section id="one">
+				<div class="inner">
+					<header class="major">
+						<h1>Web Game Development: Project Review </h1>
+					</header>
+
+					<h2>Introduction</h2>
+					<p>Hello, this is the evaluation for my project for AS2. The objective for this project is as
+						follows: The purpose of this assignment is to assess the ability to create an interactive web
+						page using JavaScript, CSS, and HTML. The brief was to make a game where the player should avoid
+						the bombs from the tanks. The game should randomly create tanks at the right-hand side of the
+						screen, and they should shoot bombs that go across the screen towards the player. When the bomb
+						hits the edge of the screen, it should explode. I have completed the checklist to the best of my
+						ability.</p>
+
+					<h2>Basic Features</h2>
+					<p>The game begins once the button is pressed, and the button also disappears once the game begins.
+						The tanks and bombs are created in random positions and are randomized throughout the game.
+						While this is happening, the bombs move across the screen from right to left. Multiple bombs can
+						move across the screen at once. The bombs do explode with an animation if they hit the player
+						(displaying player and explosion collision) or reach the end of the window. If the player is hit
+						enough times, a dying animation is displayed, and a game-over message appears on a button.
+						Additionally, there is cactus collision, meaning the player will bump into a cactus.</p>
+
+					<h2>Additional Features</h2>
+					<p>The bombs explode at random points, not all at the same time, and the explosion animation
+						disappears after three seconds. An attempt was made to add and remove lives in the project using
+						the following code:</p>
+					<pre>
+    function setupLives() {
+        lives = defaultLives;
+        var ul = document.getElementsByClassName('health')[0];
+        ul.innerHTML = '';
+        for (let index = 0; index < lives; index++) {
+            createLives();
+        }
+    }
+</pre>
+					<p>However, this was unsuccessful. Additionally, a hit animation was not implemented. A game-over
+						message does appear if the player is hit three times, and a try again button appears when the
+						player dies, providing an opportunity to try again.</p>
+
+					<h2>Scoring System</h2>
+					<p>A scoring system is in place, along with a place to enter a name. However, the issue is that it
+						does not save to local storage, so refreshing the page causes the data to disappear and the high
+						score to be lost. Another issue is that if the game is retried, the counter restarts and
+						continues simultaneously. The bombs move across the page at random speeds, and an attempt was
+						made to implement different angles using the following code:</p>
+					<pre>
+    var top = bomb.offsetTop;
+    var left = bomb.offsetLeft;
+    if (top > random) {
+        if (angleNum == 2) {
+            left = left + degree;
+        }
+        if (angleNum == 3) {
+            left = left - degree;
+        }
+        bomb.style.top = top + 'px';
+        bomb.style.left = left + 'px';
+    }
+</pre>
+					<p>However, this was unsuccessful.</p>
+
+					<h2>Highest Criteria Achieved</h2>
+					<p>One task from the highest criteria was completed: The player displays the "fire" animation when
+						the space key is pressed, but instead of fire appearing, a bow appears.</p>
+
+					<h2>Issues and Future Improvements</h2>
+					<p>There are a couple of bugs in the game. When clicking "try again," the player vibrates for a few
+						seconds before starting again, and the timer becomes glitchy. Overall, the project went well. If
+						it were to be done again, implementing lives, a hit animation, and weapons for the player would
+						be priorities. Additionally, levels would be added to make the game more interactive. If the
+						same game were to be recreated, everything would be sped up, as the current pace feels too slow.
+					</p>
+
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Contact -->
+		<section id="contact">
+			<div class="inner">
+				<section>
+					<form method="post" action="mailto:kobeng909@gmail.com">
+						<div class="fields">
+							<div class="field half">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" />
+							</div>
+							<div class="field half">
+								<label for="email">Email</label>
+								<input type="text" name="email" id="email" />
+							</div>
+							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" rows="6"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><input type="reset" value="Clear" /></li>
+						</ul>
+					</form>
+				</section>
+				<section class="split">
+					<section>
+						<div class="contact-method">
+							<span class="icon solid alt fa-envelope"></span>
+							<h3>Email</h3>
+							<a href="mailto:Kobeng909@gmail.com">Kobeng909@gmail.com</a>
+						</div>
+					</section>
+					<section>
+						<div class="contact-method">
+							<span class="icon solid alt fa-phone"></span>
+							<h3>Phone</h3>
+							<a href="tel:+447961311801">+44(0) 7961 311801</a>
+						</div>
+					</section>
+					<section>
+						<div class="contact-method">
+							<span class="icon solid alt fa-home"></span>
+							<h3>Address</h3>
+							<span>
+								<a href="https://www.google.com/maps/search/?api=1&query=73+Gladestone+House+31+Dowells+Street+Greenwich+London+SE10+9FF+United+Kingdom"
+									target="_blank">
+									73 Gladestone House <br />
+									31 Dowells Street <br />
+									Greenwich,London <br />
+									SE10 9FF <br />
+									United kingdom
+								</a>
+							</span>
+						</div>
+					</section>
+				</section>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<ul class="icons">
+
+					<li><a href="https://github.com/kam-obeng" class="icon brands alt fa-github"><span
+								class="label">GitHub</span></a></li>
+					<li><a href="https://www.linkedin.com/in/kamron-obeng-99-/"
+							class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Kamron Obeng</li>
+
+				</ul>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
