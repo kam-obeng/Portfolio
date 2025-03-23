@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Kamron Obeng's portfolio</title>
+	<link rel="shortcut icon" type="x-icon" href="images/image logo.png">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="Portfolio/assets/css/main copy.css" />
+	<noscript>
+		<link rel="stylesheet" href="Portfolio/assets/css/noscript copy.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header" class="alt">
+			<a href="index2.html" class="logo"><strong>Kamron Obengs'</strong> <span>Portfolio</span></a>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="landing.html">Landing</a></li>
+				<li><a href="generic.html">Generic</a></li>
+				<li><a href="elements.html">Elements</a></li>
+			</ul>
+			<ul class="actions stacked">
+				<li><a href="#" class="button primary fit">Get Started</a></li>
+				<li><a href="#" class="button fit">Log In</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main" class="alt">
+
+			<!-- One -->
+			<section id="one">
+				<div class="inner">
+					<header class="major">
+						<h1>Development and Automation of an O.R Database System</h1>
+					</header>
+					<h2>Introduction</h2>
+					<p>This report presents the design, implementation, and automation of an object-relational database
+						system using PL/SQL. The project involves analysing data requirements, designing an efficient
+						schema, implementing key database functionalities, and automating operations.</p>
+
+					<h2>Database Structure</h2>
+					<p>The system is structured around key entities such as <strong>Practice, Programme, Guide, Guest,
+							Team, Address</strong>, and <strong>Practice_Guide</strong>. Each entity is carefully
+						modelled to ensure a well-structured relational database.</p>
+
+					<h2>Entity-Relationship Diagram (ERD)</h2>
+					<ul>
+						<li>Guides manage multiple teams (one-to-many relationship).</li>
+						<li>Practice_Guide handles many-to-many relationships between guides and practices.</li>
+						<li>Guests are linked to programmes through a foreign key.</li>
+						<li>Addresses are stored in a structured format for guests, guides, and accommodations.</li>
+					</ul>
+
+					<h2>Key Functionalities</h2>
+					<h3>1. Queries</h3>
+					<ul>
+						<li>Retrieve and sort programmes by cost.</li>
+						<li>Count guests per programme.</li>
+						<li>Filter assigned practices by date.</li>
+					</ul>
+
+					<h3>2. Functions</h3>
+					<p>A function <strong>DetermineEmploymentStatus</strong> evaluates a guide’s job status based on the
+						number of teams they manage:</p>
+					<ul>
+						<li>More than 5 teams → Full-time</li>
+						<li>5 or fewer teams → Part-time</li>
+					</ul>
+					<p>Another function generates a welcome message for guests dynamically.</p>
+
+					<h3>3. Triggers</h3>
+					<ul>
+						<li>Enforce date-of-birth validation to prevent future dates.</li>
+						<li>Automatically update guide employment status.</li>
+					</ul>
+
+					<h3>4. Stored Procedures</h3>
+					<ul>
+						<li>Insert new guests and teams into the system.</li>
+						<li>Update guide employment status dynamically.</li>
+					</ul>
+
+					<h3>5. Cursors</h3>
+					<p>Cursors iterate over guest records for dynamic data retrieval and analysis.</p>
+
+					<h2>Testing and Validation</h2>
+					<p>Various test cases ensured the system operates efficiently:</p>
+					<ul>
+						<li>Table creation and structure validation.</li>
+						<li>Data insertion and update constraints.</li>
+						<li>Function accuracy for employment status.</li>
+						<li>Trigger execution for data integrity.</li>
+						<li>Performance validation of complex queries.</li>
+					</ul>
+
+					<h2>Automation Strategy</h2>
+					<p>The automation strategy focuses on optimizing database operations through:</p>
+					<ul>
+						<li>Stored procedures for standardization.</li>
+						<li>Triggers for enforcing business rules.</li>
+						<li>User-defined functions for real-time updates.</li>
+						<li>Efficient queries for data-driven decision-making.</li>
+					</ul>
+
+					<h3>Challenges and Solutions</h3>
+					<ul>
+						<li><strong>Data Integrity</strong>: Enforced through constraints and triggers.</li>
+						<li><strong>Complex Relationships</strong>: Managed via intermediary tables.</li>
+						<li><strong>Query Performance</strong>: Optimized with indexing.</li>
+					</ul>
+
+					<h2>Conclusion</h2>
+					<p>This project successfully demonstrates the development and automation of an object-relational
+						database system, ensuring efficiency, scalability, and reliability. The combination of PL/SQL
+						procedures, functions, triggers, and queries provides a robust framework for handling
+						organisational data, laying a strong foundation for future expansion.</p>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Contact -->
+		<section id="contact">
+			<div class="inner">
+				<section>
+					<form method="post" action="mailto:kobeng909@gmail.com">
+						<div class="fields">
+							<div class="field half">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" />
+							</div>
+							<div class="field half">
+								<label for="email">Email</label>
+								<input type="text" name="email" id="email" />
+							</div>
+							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" rows="6"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><input type="reset" value="Clear" /></li>
+						</ul>
+					</form>
+				</section>
+				<section class="split">
+					<section>
+						<div class="contact-method">
+							<span class="icon solid alt fa-envelope"></span>
+							<h3>Email</h3>
+							<a href="mailto:Kobeng909@gmail.com">Kobeng909@gmail.com</a>
+						</div>
+					</section>
+					<section>
+						<div class="contact-method">
+							<span class="icon solid alt fa-phone"></span>
+							<h3>Phone</h3>
+							<a href="tel:+447961311801">+44(0) 7961 311801</a>
+						</div>
+					</section>
+					<section>
+						<div class="contact-method">
+							<span class="icon solid alt fa-home"></span>
+							<h3>Address</h3>
+							<span>
+								<a href="https://www.google.com/maps/search/?api=1&query=73+Gladestone+House+31+Dowells+Street+Greenwich+London+SE10+9FF+United+Kingdom"
+									target="_blank">
+									73 Gladestone House <br />
+									31 Dowells Street <br />
+									Greenwich,London <br />
+									SE10 9FF <br />
+									United kingdom
+								</a>
+							</span>
+						</div>
+					</section>
+				</section>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<ul class="icons">
+
+					<li><a href="https://github.com/kam-obeng" class="icon brands alt fa-github"><span
+								class="label">GitHub</span></a></li>
+					<li><a href="https://www.linkedin.com/in/kamron-obeng-99-/"
+							class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Kamron Obeng</li>
+
+				</ul>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
